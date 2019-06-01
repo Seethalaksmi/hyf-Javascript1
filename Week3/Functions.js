@@ -77,68 +77,64 @@ console.log(listOfVehicles[2]);
 //9. Change the function vehicle to use the list of question 7. So that vehicle("green", 3, 1) prints "a green new bike".
 function vehiclesType(color, code, age) {
     let vehicle = "";
-            if (age > 1) {
-            vehicle = "used";
-        } else{
-            vehicle = "new";
-    }         
-    return (console.log('a ' + color + " " + vehicle + " " +listOfVehicles[code-1]));
+    if (age > 1) {
+        vehicle = "used";
+    } else {
+        vehicle = "new";
+    }
+    return (console.log('a ' + color + " " + vehicle + " " + listOfVehicles[code - 1]));
 }
-vehiclesType("green",3,1);
+vehiclesType("green", 3, 1);
 
 //10. Use the list of vehicles to write an advertisement. So that it prints something like: "Amazing Joe's Garage, we service cars, motorbikes, caravans and bikes.". (Hint: use a for loop.)
-/*let advertisement= ' ';
-for(let i=0;i<listOfVehicles.length;i++)
-{
-    if (i === listOfVehicles.length - 1)
-    {
-       advertisement +=  listOfVehicles[i] + 's.';
+let advertisement = ' ';
+for (let i = 0; i < listOfVehicles.length; i++) {
+    if (i === listOfVehicles.length - 1) {
+        advertisement += listOfVehicles[i] + 's.';
 
     }
 
     else if (i === listOfVehicles.length - 2) {
-        advertisement+= listOfVehicles[i] + 's and ';
+        advertisement += listOfVehicles[i] + 's and ';
 
     }
     else {
-        advertisement +=  listOfVehicles[i] + 's, ';
+        advertisement += listOfVehicles[i] + 's, ';
 
     }
 }
 
-console.log(`Amazing Joe's Garage, we service ` + advertisement);*/
+console.log(`Amazing Joe's Garage, we service ` + advertisement);
 
 //11. What if you add one more vehicle to the list, can you have that added to the advertisement without changing the code for question 10?
 listOfVehicles.push("car");
-let advertisement= ' ';
-for(let i=0;i<listOfVehicles.length;i++)
-{
-    if (i === listOfVehicles.length - 1)
-    {
-       advertisement +=  listOfVehicles[i] + 's.';
+let advertisement = ' ';
+for (let i = 0; i < listOfVehicles.length; i++) {
+    if (i === listOfVehicles.length - 1) {
+        advertisement += listOfVehicles[i] + 's.';
 
     }
 
     else if (i === listOfVehicles.length - 2) {
-        advertisement+= listOfVehicles[i] + 's and ';
+        advertisement += listOfVehicles[i] + 's and ';
 
     }
     else {
-        advertisement +=  listOfVehicles[i] + 's, ';
+        advertisement += listOfVehicles[i] + 's, ';
 
     }
 }
 console.log(`Amazing Joe's Garage, we service ` + advertisement);
 
 //12. Create an empty object.
-let emptyObject ={};
+let emptyObject = {};
 
 //13. Create an object that contains the teachers that you have had so far for the different modules.
 
-let teachers={Teacher:['christer', 'Garima', 'Gabe', 'Ivy', 'Max']};
+let teachers = { Teacher: ['christer', 'Garima', 'Gabe', 'Ivy', 'Max'] };
 
 //14. Add a property to the object you just created that contains the languages that they have taught you.
-teachers={Teacher:['christer', 'Garima', 'Gabe', 'Ivy', 'Max'], languages:['Html', 'css', 'Javascript']};
+teachers = { Teacher: ['christer', 'Garima', 'Gabe', 'Ivy', 'Max'], languages: ['Html', 'css', 'Javascript'] };
 
 //15. Write some code to test two arrays for equality using == and ===. Test the following:
 
@@ -173,5 +169,5 @@ console.log(o3);
 //17. What does the following code return? (And why?)
 
 let bar = 42;
-return(console.log(typeof typeof bar)); // here typeof typeof bar is string --> as typeof 42 is number but typeof number is string.
+return (console.log(typeof typeof bar)); // here typeof typeof bar is string --> as typeof 42 is number but typeof number is string.
 /*‘Coerce' means to try to change - so coercing var x = '6' to number means trying to change the type to number temporarily.*/
